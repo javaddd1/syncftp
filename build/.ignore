@@ -1,0 +1,5 @@
+test.txt
+*.txt
+#test.xlsx
+folder/
+fol*/
