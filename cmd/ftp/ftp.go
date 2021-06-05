@@ -32,7 +32,7 @@ func init() {
 	FTP_PATH = config.LoadConfigInfomation("FTP", "PATH")
 	LOCAL_PATH = config.LoadConfigInfomation("LOCAL", "PATH")
 	IGNORE_PATH = config.LoadConfigInfomation("IGNORE", "PATH")
-	DIRECTION = config.LoadConfigInfomation("LOCAL", "DIRECTION")
+	DIRECTION = strings.ToLower(config.LoadConfigInfomation("LOCAL", "DIRECTION"))
 	//ファイル/ディレクトリ存在確認
 	ExistIgnoreFile()
 	ExistPath(LOCAL_PATH, FTP_PATH)
